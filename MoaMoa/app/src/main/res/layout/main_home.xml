@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--스크롤뷰를 바로 처음 레이아웃에 쓸 수 없음 -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:fillViewport="true"
+    android:layout_marginTop="0dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/big" />
+
+            <ImageButton
+                android:id="@+id/mine"
+                android:layout_marginTop="10dp"
+                android:layout_width="64dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="80dp"
+                app:srcCompat="@drawable/ic_baseline_person_24"  />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="404dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="16dp"
+                android:text="Recipe MoA MoA "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+
+        </LinearLayout>
+
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnBoard"
+                    android:layout_width="411dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/light_gray"
+                    android:backgroundTint="@color/yellow"
+                    android:drawableTop="@drawable/test"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnBoard2"
+                    android:layout_width="411dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/light_gray"
+                    android:drawableTop="@drawable/pizza"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnBoard3"
+                    android:layout_width="411dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/light_gray"
+                    android:drawableTop="@drawable/great"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnBoard4"
+                    android:layout_width="411dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/light_gray"
+                    android:drawableTop="@drawable/china"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnBoard5"
+                    android:layout_width="411dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/light_gray"
+                    android:drawableTop="@drawable/de"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="95dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp">
+
+                <ImageButton
+                    android:id="@+id/homing"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/made" />
+
+                <Button
+                    android:id="@+id/hobutton"
+                    android:layout_width="70dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="20dp"
+                    android:text="홈" />
+
+                <ImageButton
+                    android:id="@+id/rank"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/rank" />
+
+                <Button
+                    android:id="@+id/ranking"
+                    android:layout_width="70dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="20dp"
+                    android:text="순위" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"></LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="99dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="0dp">
+
+                <Button
+                    android:id="@+id/recent"
+                    android:layout_width="70dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="0dp"
+                    android:text="최신글"
+                    android:textSize="12.5dp" />
+
+                <ImageButton
+                    android:id="@+id/reim"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/note" />
+
+                <Button
+                    android:id="@+id/tr"
+                    android:layout_width="70dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="추천순"
+                    android:textSize="12dp" />
+
+                <ImageButton
+                    android:id="@+id/good"
+                    android:layout_width="110dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/y" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="top"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="MissingConstraints"
+                   >
+
+
+                    <ImageButton
+                        android:id="@+id/first"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="14dp"
+                        android:src="@drawable/made"
+                        />
+
+
+
+                    <ImageButton
+                        android:id="@+id/second"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/menu" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageButton
+                        android:id="@+id/third"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/bread" />
+
+                    <ImageButton
+                        android:id="@+id/mmh"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/desert" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    tools:ignore="MissingConstraints">
+
+                    <ImageButton
+                        android:id="@+id/last"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/mun" />
+
+                    <ImageButton
+                        android:id="@+id/you"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
